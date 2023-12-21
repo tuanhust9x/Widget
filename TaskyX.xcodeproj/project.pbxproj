@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99782EED2B346FF500B38B4A /* TaskyXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99782EEC2B346FF500B38B4A /* TaskyXApp.swift */; };
+		99782EEF2B346FF500B38B4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99782EEE2B346FF500B38B4A /* ContentView.swift */; };
+		99782EF12B346FF800B38B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99782EF02B346FF800B38B4A /* Assets.xcassets */; };
+		99782EF42B346FF800B38B4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99782EF32B346FF800B38B4A /* Preview Assets.xcassets */; };
+		99782EFA2B346FF800B38B4A /* TaskyX Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 99782EF92B346FF800B38B4A /* TaskyX Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		99782EFF2B346FF800B38B4A /* TaskyXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99782EFE2B346FF800B38B4A /* TaskyXApp.swift */; };
+		99782F012B346FF800B38B4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99782F002B346FF800B38B4A /* ContentView.swift */; };
+		99782F032B346FF900B38B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99782F022B346FF900B38B4A /* Assets.xcassets */; };
+		99782F062B346FF900B38B4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99782F052B346FF900B38B4A /* Preview Assets.xcassets */; };
+		99782F3F2B3471BE00B38B4A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99782F162B34701600B38B4A /* WidgetKit.framework */; };
+		99782F402B3471BE00B38B4A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99782F182B34701600B38B4A /* SwiftUI.framework */; };
+		99782F432B3471BE00B38B4A /* Tasky_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99782F422B3471BE00B38B4A /* Tasky_Widget.swift */; };
+		99782F452B3471BF00B38B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99782F442B3471BF00B38B4A /* Assets.xcassets */; };
+		99782F492B3471BF00B38B4A /* Tasky WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 99782F3E2B3471BE00B38B4A /* Tasky WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		99782F502B34726B00B38B4A /* UpcomingWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99782F4F2B34726B00B38B4A /* UpcomingWidget.swift */; };
+		99782F512B34726E00B38B4A /* CreateTaskWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99782F4D2B34725E00B38B4A /* CreateTaskWidget.swift */; };
+		99782F532B34727800B38B4A /* ProgressWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99782F522B34727800B38B4A /* ProgressWidget.swift */; };
+		99782F552B3472A200B38B4A /* ComplicationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99782F542B3472A200B38B4A /* ComplicationType.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99782EFB2B346FF800B38B4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99782EE12B346FF500B38B4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99782EF82B346FF800B38B4A;
+			remoteInfo = "TaskyX Watch App";
+		};
+		99782F472B3471BF00B38B4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99782EE12B346FF500B38B4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99782F3D2B3471BE00B38B4A;
+			remoteInfo = "Tasky WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		99782F0C2B346FF900B38B4A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				99782EFA2B346FF800B38B4A /* TaskyX Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99782F262B34701800B38B4A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				99782F492B3471BF00B38B4A /* Tasky WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		99782EE92B346FF500B38B4A /* TaskyX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskyX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99782EEC2B346FF500B38B4A /* TaskyXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskyXApp.swift; sourceTree = "<group>"; };
+		99782EEE2B346FF500B38B4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		99782EF02B346FF800B38B4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99782EF32B346FF800B38B4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		99782EF92B346FF800B38B4A /* TaskyX Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TaskyX Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99782EFE2B346FF800B38B4A /* TaskyXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskyXApp.swift; sourceTree = "<group>"; };
+		99782F002B346FF800B38B4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		99782F022B346FF900B38B4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99782F052B346FF900B38B4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		99782F162B34701600B38B4A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		99782F182B34701600B38B4A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		99782F3E2B3471BE00B38B4A /* Tasky WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Tasky WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99782F422B3471BE00B38B4A /* Tasky_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasky_Widget.swift; sourceTree = "<group>"; };
+		99782F442B3471BF00B38B4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99782F462B3471BF00B38B4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99782F4D2B34725E00B38B4A /* CreateTaskWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskWidget.swift; sourceTree = "<group>"; };
+		99782F4F2B34726B00B38B4A /* UpcomingWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingWidget.swift; sourceTree = "<group>"; };
+		99782F522B34727800B38B4A /* ProgressWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressWidget.swift; sourceTree = "<group>"; };
+		99782F542B3472A200B38B4A /* ComplicationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationType.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99782EE62B346FF500B38B4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99782EF62B346FF800B38B4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99782F3B2B3471BE00B38B4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99782F402B3471BE00B38B4A /* SwiftUI.framework in Frameworks */,
+				99782F3F2B3471BE00B38B4A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99782EE02B346FF500B38B4A = {
+			isa = PBXGroup;
+			children = (
+				99782EEB2B346FF500B38B4A /* TaskyX */,
+				99782EFD2B346FF800B38B4A /* TaskyX Watch App */,
+				99782F412B3471BE00B38B4A /* Tasky Widget */,
+				99782F152B34701600B38B4A /* Frameworks */,
+				99782EEA2B346FF500B38B4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99782EEA2B346FF500B38B4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99782EE92B346FF500B38B4A /* TaskyX.app */,
+				99782EF92B346FF800B38B4A /* TaskyX Watch App.app */,
+				99782F3E2B3471BE00B38B4A /* Tasky WidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99782EEB2B346FF500B38B4A /* TaskyX */ = {
+			isa = PBXGroup;
+			children = (
+				99782EEC2B346FF500B38B4A /* TaskyXApp.swift */,
+				99782EEE2B346FF500B38B4A /* ContentView.swift */,
+				99782EF02B346FF800B38B4A /* Assets.xcassets */,
+				99782EF22B346FF800B38B4A /* Preview Content */,
+			);
+			path = TaskyX;
+			sourceTree = "<group>";
+		};
+		99782EF22B346FF800B38B4A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				99782EF32B346FF800B38B4A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		99782EFD2B346FF800B38B4A /* TaskyX Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				99782EFE2B346FF800B38B4A /* TaskyXApp.swift */,
+				99782F002B346FF800B38B4A /* ContentView.swift */,
+				99782F022B346FF900B38B4A /* Assets.xcassets */,
+				99782F042B346FF900B38B4A /* Preview Content */,
+			);
+			path = "TaskyX Watch App";
+			sourceTree = "<group>";
+		};
+		99782F042B346FF900B38B4A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				99782F052B346FF900B38B4A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		99782F152B34701600B38B4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99782F162B34701600B38B4A /* WidgetKit.framework */,
+				99782F182B34701600B38B4A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99782F412B3471BE00B38B4A /* Tasky Widget */ = {
+			isa = PBXGroup;
+			children = (
+				99782F4D2B34725E00B38B4A /* CreateTaskWidget.swift */,
+				99782F4F2B34726B00B38B4A /* UpcomingWidget.swift */,
+				99782F522B34727800B38B4A /* ProgressWidget.swift */,
+				99782F422B3471BE00B38B4A /* Tasky_Widget.swift */,
+				99782F442B3471BF00B38B4A /* Assets.xcassets */,
+				99782F462B3471BF00B38B4A /* Info.plist */,
+				99782F542B3472A200B38B4A /* ComplicationType.swift */,
+			);
+			path = "Tasky Widget";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99782EE82B346FF500B38B4A /* TaskyX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99782F0D2B346FF900B38B4A /* Build configuration list for PBXNativeTarget "TaskyX" */;
+			buildPhases = (
+				99782EE52B346FF500B38B4A /* Sources */,
+				99782EE62B346FF500B38B4A /* Frameworks */,
+				99782EE72B346FF500B38B4A /* Resources */,
+				99782F0C2B346FF900B38B4A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99782EFC2B346FF800B38B4A /* PBXTargetDependency */,
+			);
+			name = TaskyX;
+			productName = TaskyX;
+			productReference = 99782EE92B346FF500B38B4A /* TaskyX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99782EF82B346FF800B38B4A /* TaskyX Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99782F092B346FF900B38B4A /* Build configuration list for PBXNativeTarget "TaskyX Watch App" */;
+			buildPhases = (
+				99782EF52B346FF800B38B4A /* Sources */,
+				99782EF62B346FF800B38B4A /* Frameworks */,
+				99782EF72B346FF800B38B4A /* Resources */,
+				99782F262B34701800B38B4A /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99782F482B3471BF00B38B4A /* PBXTargetDependency */,
+			);
+			name = "TaskyX Watch App";
+			productName = "TaskyX Watch App";
+			productReference = 99782EF92B346FF800B38B4A /* TaskyX Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99782F3D2B3471BE00B38B4A /* Tasky WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99782F4A2B3471BF00B38B4A /* Build configuration list for PBXNativeTarget "Tasky WidgetExtension" */;
+			buildPhases = (
+				99782F3A2B3471BE00B38B4A /* Sources */,
+				99782F3B2B3471BE00B38B4A /* Frameworks */,
+				99782F3C2B3471BE00B38B4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tasky WidgetExtension";
+			productName = "Tasky WidgetExtension";
+			productReference = 99782F3E2B3471BE00B38B4A /* Tasky WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99782EE12B346FF500B38B4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					99782EE82B346FF500B38B4A = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					99782EF82B346FF800B38B4A = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					99782F3D2B3471BE00B38B4A = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 99782EE42B346FF500B38B4A /* Build configuration list for PBXProject "TaskyX" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99782EE02B346FF500B38B4A;
+			productRefGroup = 99782EEA2B346FF500B38B4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99782EE82B346FF500B38B4A /* TaskyX */,
+				99782EF82B346FF800B38B4A /* TaskyX Watch App */,
+				99782F3D2B3471BE00B38B4A /* Tasky WidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99782EE72B346FF500B38B4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99782EF42B346FF800B38B4A /* Preview Assets.xcassets in Resources */,
+				99782EF12B346FF800B38B4A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99782EF72B346FF800B38B4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99782F062B346FF900B38B4A /* Preview Assets.xcassets in Resources */,
+				99782F032B346FF900B38B4A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99782F3C2B3471BE00B38B4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99782F452B3471BF00B38B4A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99782EE52B346FF500B38B4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99782EEF2B346FF500B38B4A /* ContentView.swift in Sources */,
+				99782EED2B346FF500B38B4A /* TaskyXApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99782EF52B346FF800B38B4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99782F012B346FF800B38B4A /* ContentView.swift in Sources */,
+				99782EFF2B346FF800B38B4A /* TaskyXApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99782F3A2B3471BE00B38B4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99782F552B3472A200B38B4A /* ComplicationType.swift in Sources */,
+				99782F532B34727800B38B4A /* ProgressWidget.swift in Sources */,
+				99782F432B3471BE00B38B4A /* Tasky_Widget.swift in Sources */,
+				99782F502B34726B00B38B4A /* UpcomingWidget.swift in Sources */,
+				99782F512B34726E00B38B4A /* CreateTaskWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99782EFC2B346FF800B38B4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99782EF82B346FF800B38B4A /* TaskyX Watch App */;
+			targetProxy = 99782EFB2B346FF800B38B4A /* PBXContainerItemProxy */;
+		};
+		99782F482B3471BF00B38B4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99782F3D2B3471BE00B38B4A /* Tasky WidgetExtension */;
+			targetProxy = 99782F472B3471BF00B38B4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		99782F072B346FF900B38B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		99782F082B346FF900B38B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		99782F0A2B346FF900B38B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TaskyX Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = SBE5S5T3FV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TaskyX;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.macaw.TaskyX;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.macaw.TaskyX.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		99782F0B2B346FF900B38B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TaskyX Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = SBE5S5T3FV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TaskyX;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.macaw.TaskyX;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.macaw.TaskyX.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		99782F0E2B346FF900B38B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TaskyX/Preview Content\"";
+				DEVELOPMENT_TEAM = SBE5S5T3FV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TaskyX;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.macaw.TaskyX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99782F0F2B346FF900B38B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TaskyX/Preview Content\"";
+				DEVELOPMENT_TEAM = SBE5S5T3FV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TaskyX;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.macaw.TaskyX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99782F4B2B3471BF00B38B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SBE5S5T3FV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tasky Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Tasky Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.macaw.TaskyX.watchkitapp.Tasky-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		99782F4C2B3471BF00B38B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SBE5S5T3FV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tasky Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Tasky Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.macaw.TaskyX.watchkitapp.Tasky-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99782EE42B346FF500B38B4A /* Build configuration list for PBXProject "TaskyX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99782F072B346FF900B38B4A /* Debug */,
+				99782F082B346FF900B38B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99782F092B346FF900B38B4A /* Build configuration list for PBXNativeTarget "TaskyX Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99782F0A2B346FF900B38B4A /* Debug */,
+				99782F0B2B346FF900B38B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99782F0D2B346FF900B38B4A /* Build configuration list for PBXNativeTarget "TaskyX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99782F0E2B346FF900B38B4A /* Debug */,
+				99782F0F2B346FF900B38B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99782F4A2B3471BF00B38B4A /* Build configuration list for PBXNativeTarget "Tasky WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99782F4B2B3471BF00B38B4A /* Debug */,
+				99782F4C2B3471BF00B38B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99782EE12B346FF500B38B4A /* Project object */;
+}
